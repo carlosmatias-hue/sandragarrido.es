@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandra Garrido Sotomayor — Transformation & Organisation</title>
+<meta name="description" content="Sandra Garrido Sotomayor · Capability Building and Transformation at Roche · Organisation & HR specialist · Enterprise Agile Coach">
+<style>
+  :root{
+    --ink:#241b20;
+    --ink-soft:#5b4e53;
+    --paper:#ffffff;
+    --paper-soft:#f7f2f4;
+    --line:#e9e0e3;
+    --accent:#7a3b56;
+    --accent-soft:#f3e6eb;
+    --maxw:820px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+
+  /* Nav */
+  nav{
+    position:sticky;top:0;z-index:10;
+    background:rgba(255,255,255,0.9);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{
+    display:flex;align-items:center;justify-content:space-between;
+    padding-top:14px;padding-bottom:14px;
+    max-width:960px;
+  }
+  nav .brand{font-weight:700;font-size:15px;color:var(--ink);}
+  nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0;}
+  nav ul li a{color:var(--ink-soft);font-size:14px;font-weight:500;}
+  nav ul li a:hover{color:var(--accent);text-decoration:none;}
+
+  /* Hero */
+  header.hero{
+    padding:72px 0 56px;
+    background:linear-gradient(180deg,var(--accent-soft) 0%, var(--paper) 100%);
+    border-bottom:1px solid var(--line);
+  }
+  .hero-inner{display:flex;align-items:center;gap:40px;}
+  .hero-photo{
+    flex:0 0 auto;width:168px;height:168px;border-radius:50%;overflow:hidden;
+    border:4px solid var(--paper);box-shadow:0 6px 24px rgba(0,0,0,0.12);
+  }
+  .hero-photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .hero-text h1{margin:0 0 8px;font-size:34px;letter-spacing:-0.02em;}
+  .hero-text .headline{font-size:17px;color:var(--ink-soft);margin:0 0 6px;max-width:520px;}
+  .hero-text .location{font-size:14px;color:var(--ink-soft);margin:0 0 20px;}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:8px;font-size:14px;font-weight:600;border:1px solid transparent;}
+  .btn:hover{text-decoration:none;}
+  .btn-primary{background:var(--accent);color:#fff;}
+  .btn-primary:hover{background:#5f2e43;}
+  .btn-ghost{background:var(--paper);color:var(--ink);border-color:var(--line);}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+
+  /* Sections */
+  section{padding:56px 0;border-bottom:1px solid var(--line);}
+  section:last-of-type{border-bottom:none;}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:0.08em;color:var(--accent);font-weight:700;margin:0 0 24px;}
+  .about p{margin:0 0 16px;color:var(--ink-soft);font-size:16px;}
+  .about p:last-child{margin-bottom:0;}
+  .about .lang-note{font-size:13px;color:var(--ink-soft);font-style:italic;margin-top:14px;}
+
+  /* Timeline */
+  .timeline{list-style:none;margin:0;padding:0;}
+  .timeline li{position:relative;padding:0 0 28px 26px;border-left:2px solid var(--line);}
+  .timeline li:last-child{padding-bottom:0;}
+  .timeline li::before{content:"";position:absolute;left:-7px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:2px solid var(--paper);}
+  .role{font-weight:700;font-size:16px;margin:0 0 2px;}
+  .org{font-size:14px;color:var(--ink);font-weight:600;}
+  .dates{font-size:13px;color:var(--ink-soft);margin:2px 0 8px;}
+  .desc{font-size:14.5px;color:var(--ink-soft);margin:0;}
+
+  /* Education / certs */
+  .edu-block{margin-bottom:22px;}
+  .edu-block:last-child{margin-bottom:0;}
+  .edu-title{font-weight:700;font-size:16px;margin:0 0 2px;}
+  .edu-sub{font-size:14px;color:var(--ink-soft);margin:0 0 2px;}
+  .edu-dates{font-size:13px;color:var(--ink-soft);}
+  .cert-list{list-style:none;margin:12px 0 0;padding:0;}
+  .cert-list li{padding:10px 0;border-top:1px solid var(--line);font-size:14.5px;color:var(--ink-soft);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+  .cert-list li span.cert-name{color:var(--ink);font-weight:600;}
+  .cert-more{margin-top:10px;font-size:13.5px;}
+
+  /* Skills */
+  .pills{display:flex;flex-wrap:wrap;gap:10px;}
+  .pill{background:var(--accent-soft);color:var(--accent);font-size:13.5px;font-weight:600;padding:8px 14px;border-radius:999px;}
+  .langs{margin-top:24px;display:flex;gap:28px;flex-wrap:wrap;}
+  .langs div span.lbl{display:block;font-weight:700;font-size:15px;}
+  .langs div span.lvl{display:block;font-size:13.5px;color:var(--ink-soft);}
+
+  /* Testimonials */
+  .quote{background:var(--paper-soft);border-radius:12px;padding:22px 24px;margin-bottom:16px;font-size:15px;color:var(--ink);}
+  .quote:last-child{margin-bottom:0;}
+  .quote p{margin:0 0 10px;font-style:italic;}
+  .quote .who{font-size:13.5px;color:var(--ink-soft);font-style:normal;}
+
+  /* Contact / footer */
+  footer{padding:56px 0 60px;text-align:center;}
+  footer h2{color:var(--ink-soft);}
+  footer p{color:var(--ink-soft);font-size:15px;}
+  .foot-actions{display:flex;gap:12px;justify-content:center;margin-top:18px;flex-wrap:wrap;}
+  .fine{margin-top:40px;font-size:12.5px;color:#a9989f;}
+
+  @media (max-width:640px){
+    .hero-inner{flex-direction:column;text-align:center;align-items:center;}
+    .hero-text .headline{max-width:none;}
+    .hero-actions{justify-content:center;}
+    nav ul{gap:14px;}
+    nav ul li a{font-size:13px;}
+    h1{font-size:28px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand">Sandra Garrido Sotomayor</div>
+    <ul>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#education">Formación</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-photo">
+      <img src="assets/sandra-photo.png" alt="Foto de Sandra Garrido Sotomayor">
+    </div>
+    <div class="hero-text">
+      <h1>Sandra Garrido Sotomayor</h1>
+      <p class="headline">Capability Building &amp; Transformation en Roche · Organisation &amp; HR Specialist · Enterprise Agile Coach</p>
+      <p class="location">España</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/sandragarrido/" target="_blank" rel="noopener">Ver LinkedIn</a>
+        <!-- Añade aquí tu email de contacto: <a class="btn btn-ghost" href="mailto:TU_EMAIL">Contactar</a> -->
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap about">
+    <h2>Sobre mí</h2>
+    <p>Experience partnering with startups and corporates to cascade and implement their purpose to any point/person in the company, accelerating processes, facilitating customer engagement and unlocking resource allocation to focus on priorities. Direct report to C-level.</p>
+    <p>Digital transformation. Portfolio management. Talent fluidity. Strategic agility. Innovation. Leadership and transformation. Purpose and vision driven. Foresight. Organizational design and HR agile. Enterprise Agile coach. SAFe programme and portfolio consultant. Agile frameworks (SAFe, Lean, Kanban y Scrum). Entrepreneurship. Diversity. Multi-country.</p>
+    <p class="lang-note">Texto tal y como aparece en su perfil de LinkedIn (en inglés).</p>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experiencia</h2>
+    <ul class="timeline">
+      <li>
+        <p class="role">Transformation and Business Capabilities</p>
+        <p class="org">Roche</p>
+        <p class="dates">Oct. 2019 — Actualidad · 6 años 11 meses</p>
+        <p class="desc">Liderazgo de la adopción ética de IA en el día a día, gestión de conflictos multi-país, diseño de nuevas arquitecturas financieras, priorización de portfolio y estrategia de gestión del conocimiento. Soporte a las áreas de People&amp;Culture y Comunicación en sus procesos de transformación, e implementación de nuevas rutinas de trabajo ágil a escala.</p>
+      </li>
+      <li>
+        <p class="role">Director Postgrado en "Agile Project &amp; Product Management"</p>
+        <p class="org">IEBSchool — Universidad Rey Juan Carlos · Online</p>
+        <p class="dates">May. 2012 — Actualidad · 14 años 4 meses</p>
+        <p class="desc">Responsable de la selección de profesorado y la dirección técnica del programa: revisión y actualización de contenidos, acompañamiento al alumnado y coordinación del comité de profesores.</p>
+      </li>
+      <li>
+        <p class="role">Enterprise Agile Coach and Business Agility Consultant</p>
+        <p class="org">Kairós Digital Solutions S.L.</p>
+        <p class="dates">Nov. 2015 — Oct. 2019 · 4 años</p>
+        <p class="desc">Definición e implementación de estructuras lean y de gobierno en empresas de finanzas, telco y retail; transformación de RRHH (talento, reskilling, nuevos roles), gestión del cambio cultural y evaluaciones de madurez ágil. Creación de la delegación de Kairós DS en Londres (VP Kairos UK) y soporte a la transformación ágil de Santander UK.</p>
+      </li>
+      <li>
+        <p class="role">Presidenta</p>
+        <p class="org">AECUMAD — Asociación de Emprendedores/as Culturales y Creativos de Madrid</p>
+        <p class="dates">Dic. 2010 — Ago. 2016 · 5 años 9 meses</p>
+        <p class="desc">Impulso del emprendimiento en las industrias culturales y creativas, generando sinergias y visibilizando el potencial económico de la creatividad.</p>
+      </li>
+      <li>
+        <p class="role">Digital Strategy</p>
+        <p class="org">InvestBAN · Madrid</p>
+        <p class="dates">Oct. 2012 — Nov. 2013 · 1 año 2 meses</p>
+        <p class="desc">Estrategia digital para la red de inversores y Business Angels InvestBAN, punto de encuentro entre proyectos innovadores e inversores.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <h2>Formación y certificaciones</h2>
+
+    <div class="edu-block">
+      <p class="edu-title">Strategic Alignment Programme — Strategy</p>
+      <p class="edu-sub">University of Oxford</p>
+      <p class="edu-dates">Oct. 2020 — Dic. 2020</p>
+    </div>
+    <div class="edu-block">
+      <p class="edu-title">Designing a New Learning Environment</p>
+      <p class="edu-sub">Stanford University</p>
+      <p class="edu-dates">2012 — 2013</p>
+    </div>
+    <p class="cert-more">+2 programas formativos adicionales — <a href="https://www.linkedin.com/in/sandragarrido/" target="_blank" rel="noopener">ver todos en LinkedIn</a>.</p>
+
+    <ul class="cert-list">
+      <li><span class="cert-name">Coaching for Enterprise Agility (ICP-CAT) — ICAgile</span><span>2018</span></li>
+      <li><span class="cert-name">Certified Scrum Master — Scrum Alliance</span><span></span></li>
+    </ul>
+    <p class="cert-more">+3 certificaciones adicionales en Agile y Business Agility — <a href="https://www.linkedin.com/in/sandragarrido/" target="_blank" rel="noopener">ver el listado completo en LinkedIn</a>.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Habilidades</h2>
+    <div class="pills">
+      <span class="pill">Transformación Digital</span>
+      <span class="pill">Enterprise Agile Coaching</span>
+      <span class="pill">SAFe</span>
+      <span class="pill">Scrum</span>
+      <span class="pill">Lean Portfolio Management</span>
+      <span class="pill">Organizational Design</span>
+      <span class="pill">HR Agile</span>
+      <span class="pill">Gestión de crisis</span>
+      <span class="pill">Liderazgo</span>
+      <span class="pill">Entrepreneurship</span>
+    </div>
+    <div class="langs">
+      <div><span class="lbl">Francés</span><span class="lvl">Competencia básica profesional</span></div>
+      <div><span class="lbl">Inglés</span><span class="lvl">Profesional completo</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="wrap">
+    <h2>Lo que dicen de mí</h2>
+    <div class="quote">
+      <p>"Sandra es una visionaria futurista que siempre va delante de los demás. Su creatividad desbordante y su implicación con el proyecto académico Agile en IEBS han dejado un legado de más de 1.000 profesionales formados en el mercado, ocupando puestos de gran responsabilidad."</p>
+      <p class="who">— Oscar Fuente Castrillejo, Tech Entrepreneur</p>
+    </div>
+    <div class="quote">
+      <p>"Sandra es una persona muy versátil, con una gran pasión por su trabajo y por ayudar a otros a conseguir sus objetivos. Es una profesional íntegra, que siempre busca el beneficio de todos los involucrados, haciendo negocios con una visión sostenible."</p>
+      <p class="who">— Miguel Abreu, Fractional Tech CEO</p>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <h2>Contacto</h2>
+    <p>Transformación digital, agilidad organizativa y gestión de personas.</p>
+    <div class="foot-actions">
+      <a class="btn btn-primary" href="https://www.linkedin.com/in/sandragarrido/" target="_blank" rel="noopener">LinkedIn</a>
+      <!-- Sustituye este comentario por un botón de email cuando tengas la dirección de contacto que quieras publicar -->
+    </div>
+    <p class="fine">Sandra Garrido Sotomayor · España</p>
+  </div>
+</footer>
+
+</body>
+</html>
